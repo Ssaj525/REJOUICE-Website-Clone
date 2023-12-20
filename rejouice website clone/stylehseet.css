@@ -1,0 +1,651 @@
+@font-face {
+  font-family: rejouice;
+  src: url("./imgs/Rejouice-Headline.ttf");
+}
+@font-face {
+  font-family: nb;
+  src: url("./imgs/NBInternationalProBoo.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: nb;
+  gap: 5px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+body .page1 {
+  height: 100vh;
+  width: 100%;
+}
+body .page1 .circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FF5F38;
+  color: #000;
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  font-size: 0.9rem;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+body .page1 .circle h3 {
+  font-weight: 500;
+}
+body .page1 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+  position: absolute;
+}
+body .page1 .page1-component {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  z-index: 99;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .page1 .page1-component nav {
+  width: 100%;
+  height: 60px;
+  margin-top: 45px;
+  display: flex;
+  padding: 0 40px;
+  cursor: pointer;
+  font-family: nb;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page1 .page1-component nav h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+body .page1 .page1-component h1 {
+  margin-top: 25%;
+}
+body .page1 .page1-component h1 #cap {
+  font-size: 19vw;
+  font-weight: 600;
+}
+body .page1 .page1-component h1 span {
+  font-size: 26vw;
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: rejouice;
+}
+body .page2 {
+  width: 100%;
+  height: 90vh;
+  font-family: nb;
+}
+body .page2 .page2-components {
+  width: 100%;
+  height: 100%;
+}
+body .page2 .page2-components .text {
+  width: 92%;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 1.3rem;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page2 .page2-components .text h3 {
+  font-weight: 100;
+}
+body .page2 .page2-components .text-box {
+  width: 95%;
+  height: 400px;
+  padding: 15px;
+  margin-left: 2%;
+}
+body .page2 .page2-components .text-box h3 {
+  font-size: 4.2vw;
+  line-height: 65px;
+}
+body .page3 {
+  width: 100%;
+  height: 110vh;
+  margin-bottom: 13%;
+  font-family: nb;
+}
+body .page3 .page3-components {
+  width: 100%;
+  height: 100%;
+}
+body .page3 .page3-components .text-box {
+  width: 95%;
+  height: 400px;
+  padding: 15px;
+  margin-left: 2%;
+}
+body .page3 .page3-components .text-box .m-text {
+  text-align: center;
+}
+body .page3 .page3-components .text-box .m-text h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+body .page3 .page3-components .text-box .m-text h3 span {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+body .page3 .page3-components .text-box .m-text h3 #arrow {
+  background-color: #fff;
+  color: #3f3b3b;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700;
+  transform: rotate(-90deg);
+}
+body .page3 .page3-components .text-box .h-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 4vw;
+}
+body .page3 .page3-components .text-box .h-text a {
+  color: #000;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.6rem;
+}
+body .page3 .page3-components .second-box {
+  width: 95%;
+  height: 90%;
+  margin-top: -10%;
+  padding-top: 5%;
+  margin-left: 2%;
+}
+body .page3 .page3-components .second-box .s-nav {
+  width: 96%;
+  margin-top: 15px;
+  margin-left: 2%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page3 .page3-components .second-box .s-nav h3 {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+body .page3 .page3-components .second-box .s-nav a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: #000;
+}
+body .page3 .page3-components .second-box .s-nav a span {
+  display: inline-block;
+  margin-right: 10px;
+  transform: scale(-1, 1);
+}
+body .page3 .page3-components .second-box .items {
+  width: 100%;
+  height: 80%;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}
+body .page3 .page3-components .second-box .items .sm-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+  transition: all cubic-bezier(0.15, 0.44, 0.94, 1.14) 8s;
+}
+body .page3 .page3-components .second-box .items .sm-img img {
+  width: 98%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+body .page3 .page3-components .second-box .items .sm-img video {
+  width: 97%;
+  position: absolute;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .page3 .page3-components .second-box .items .sm-img:hover img {
+  opacity: 0;
+  transition: all ease 0.3s;
+  animation: low 0.8s 1.6s infinite linear;
+}
+@keyframes low {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body .page4 {
+  width: 100%;
+  height: 160vh;
+  font-family: nb;
+}
+body .page4 .page4-components {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+body .page4 .page4-components .color-ball {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .page4 .page4-components .color-ball video {
+  width: 60%;
+  height: 100%;
+  transform: scale(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .page4 .page4-components .color-ball svg {
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .page4 .page4-components .color-ball roll-number {
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 60%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+body .page4 .page4-components .color-ball roll-number span {
+  font-family: rejouice;
+  position: absolute;
+  top: 49%;
+  color: #fff;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-size: 4.5rem;
+}
+body .page4 .page4-components .color-ball #avail {
+  font-family: rejouice;
+  position: absolute;
+  top: 55%;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+body .page4 .page4-components .color-ball #seat {
+  font-family: rejouice;
+  position: absolute;
+  top: 49%;
+  color: #fff;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+body .page4 .page4-components .circle-2 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+body .page4 .page4-components .circle-2 h3 {
+  font-weight: 500;
+}
+body .page4 .page4-components .text {
+  width: 92%;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 1.3rem;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page4 .page4-components .text h3 {
+  font-weight: 100;
+}
+body .page4 .page4-components .text-box {
+  width: 95%;
+  height: 400px;
+  padding: 15px;
+  margin-left: 2%;
+}
+body .page4 .page4-components .text-box h3 {
+  font-size: 4.2vw;
+  line-height: 65px;
+}
+body .page5 {
+  width: 100%;
+  height: 90vh;
+  font-family: rejouice;
+}
+body .page5 .page5-components {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .page5 .page5-components .text {
+  width: 92%;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: 4%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page5 .page5-components .text h1 {
+  font-size: 8rem;
+  font-weight: 550;
+}
+body .page5 .page5-components .swiper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2%;
+  height: 60%;
+}
+body .page5 .page5-components .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  gap: 45px;
+  display: flex;
+}
+body .page5 .page5-components .swiper-slide {
+  display: flex;
+  width: 100%;
+  cursor: grab;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+}
+body .page5 .page5-components .swiper-slide #small {
+  width: 350px;
+  height: 250px;
+  margin-top: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .page5 .page5-components .swiper-slide #small-m {
+  width: 350px;
+  height: 300px;
+  margin-top: 11%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .page5 .page5-components .swiper-slide img {
+  width: 300px;
+  margin-left: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .page7 {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 13%;
+  font-family: nb;
+}
+body .page7 .page7-components {
+  width: 100%;
+  height: 100%;
+}
+body .page7 .page7-components .text-box {
+  width: 95%;
+  height: 400px;
+  padding: 15px;
+  margin-left: 2%;
+}
+body .page7 .page7-components .text-box .m-text {
+  text-align: center;
+}
+body .page7 .page7-components .text-box .m-text h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+body .page7 .page7-components .text-box .m-text h3 span {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+body .page7 .page7-components .text-box .m-text h3 #arrow {
+  background-color: #fff;
+  color: #3f3b3b;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700;
+  transform: rotate(-90deg);
+}
+body .page7 .page7-components .text-box .h-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 4vw;
+}
+body .page7 .page7-components .text-box .h-text a {
+  color: #000;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.6rem;
+}
+body .page6 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+body .page6 .page6-component {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #000;
+  display: flex;
+  z-index: 9;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .page6 .page6-component nav {
+  width: 100%;
+  height: 60px;
+  margin-top: 85px;
+  display: flex;
+  padding: 0 40px;
+  cursor: pointer;
+  font-family: nb;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page6 .page6-component nav .left h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+body .page6 .page6-component nav .left button {
+  padding: 13px 19px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+body .page6 .page6-component nav .left button:hover {
+  background-color: #fff;
+  color: #000;
+}
+body .page6 .page6-component nav .list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 20px;
+  gap: 85px;
+  transition: all ease 0.5s;
+}
+body .page6 .page6-component nav .list li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+body .page6 .page6-component nav .list li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+body .page6 .page6-component #mid {
+  width: 95%;
+}
+body .page6 .page6-component #mid #middle {
+  margin-top: 25px;
+  display: flex;
+  position: absolute;
+  font-family: rejouice;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 60px;
+}
+body .page6 .page6-component #mid #middle h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+body .page6 .page6-component #mid #middle .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 85px;
+}
+body .page6 .page6-component #mid #middle .links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+}
+body .page6 .page6-component h1 {
+  margin-top: -5%;
+  position: relative;
+  padding-top: 5%;
+}
+body .page6 .page6-component h1 #cap {
+  font-size: 19vw;
+  font-weight: 600;
+}
+body .page6 .page6-component h1 span {
+  font-size: 26vw;
+  position: relative;
+  bottom: 0;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: rejouice;
+}
+body .page8 {
+  width: 100%;
+  height: 90vh;
+  font-family: nb;
+}
+body .page8 .page8-components {
+  width: 100%;
+  height: 100%;
+}
+body .page8 .page8-components .text {
+  width: 92%;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 1.3rem;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .page8 .page8-components .text h3 {
+  font-weight: 100;
+}
+body .page8 .page8-components .text-box {
+  width: 95%;
+  height: 400px;
+  padding: 15px;
+  margin-left: 2%;
+}
+body .page8 .page8-components .text-box h3 {
+  font-size: 4.2vw;
+  line-height: 65px;
+}/*# sourceMappingURL=stylehseet.css.map */
